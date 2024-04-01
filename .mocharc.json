@@ -1,5 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/mocharc.json",
-  "require": ["tsx", "chai/register-expect", "mocha.setup.js"],
-  "timeout": 10000
+  "require": ["tsx", "chai/register-expect", "mocha.setup.ts"],
+  "timeout": 10000,
+  "parallel": false
 }
