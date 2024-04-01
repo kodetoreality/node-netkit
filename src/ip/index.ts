@@ -88,7 +88,7 @@ export function isPrivateIP(addr: string) {
   const version = getIPVersion(addr);
   if (version === 4) {
     return /^(127\.)|(10\.)|(172\.1[6-9]\.)|(172\.2[0-9]\.)|(172\.3[0-1]\.)|(192\.168\.)/.test(
-      addr,
+      addr
     );
   }
 
@@ -143,7 +143,7 @@ export function* generateIP(cidr: string): Generator<string, void> {
   const maxHosts = 2 ** hostBits;
 
   // Convert the base IP to a number
-  let currentIP = toLong(baseIP);
+  const currentIP = toLong(baseIP);
 
   // Generate IPs
   for (let i = 1; i < maxHosts - 1; i++) {

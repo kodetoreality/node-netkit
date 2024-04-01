@@ -1,7 +1,17 @@
 {
+  "$schema": "https://json.schemastore.org/prettierrc",
   "useTabs": false,
   "semi": true,
   "singleQuote": true,
-  "trailingComma": "all",
-  "printWidth": 100
+  "trailingComma": "es5",
+  "printWidth": 100,
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": {
+        "parser": "markdown",
+        "printWidth": 79
+      }
+    }
+  ]
 }
